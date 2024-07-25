@@ -1,0 +1,18 @@
+{
+  "name": "cpp-node-calculator",
+  "version": "1.0.0",
+  "main": "test-binding.js",
+  "scripts": {
+    "build": "node-gyp rebuild",
+    "clean": "node-gyp clean"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "gypfile": true,
+  "description": "",
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^8.1.0"
+  }
+}
