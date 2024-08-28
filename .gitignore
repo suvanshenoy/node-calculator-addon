@@ -4,4 +4,5 @@ yarn.lock
 package-lock.json
 compile_commands.json
 node_modules/.yarn-integrity
+/bun.lockb
 
