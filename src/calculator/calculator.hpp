@@ -8,5 +8,6 @@ public:
   constexpr inline T add(const T &a, const T &b) const;
   constexpr inline T subtract(const T &a, const T &ob) const;
   constexpr inline T multiply(const T &a, const T &b) const;
-  constexpr inline Optional<T> divide(const T &a, const T &b) const;
+  [[nodiscard]] constexpr inline Optional<T> divide(const T &a,
+                                                    const T &b) const;
 };

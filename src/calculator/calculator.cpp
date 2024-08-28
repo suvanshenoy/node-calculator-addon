@@ -19,8 +19,8 @@ constexpr inline T Calculator<T>::multiply(const T &a, const T &b) const {
 }
 
 template <typename T>
-constexpr inline Optional<T> Calculator<T>::divide(const T &a,
-                                                   const T &b) const {
+[[nodiscard]] constexpr inline Optional<T>
+Calculator<T>::divide(const T &a, const T &b) const {
   if (b == 0) {
     return std::nullopt;
   }
