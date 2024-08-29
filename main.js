@@ -1,4 +1,4 @@
-const addon = require('./build/Release/calculator.node');
+const addon = require('bindings')('calculator');
 
 const calc = addon.createCalculator();
 
