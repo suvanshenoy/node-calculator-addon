@@ -2,37 +2,37 @@
 
 #include "utils.hpp"
 #include <optional>
+#include <type_traits>
 
-template <typename T> class Calculator {
-public:
-  Calculator() = default;
-  constexpr inline T add(const T &a, const T &b) const;
-  constexpr inline T subtract(const T &a, const T &ob) const;
-  constexpr inline T multiply(const T &a, const T &b) const;
-  [[nodiscard]] constexpr inline Optional<T> divide(const T &a,
-                                                    const T &b) const;
-};
-
+namespace Calculator {
 template <typename T>
-constexpr inline T Calculator<T>::add(const T &a, const T &b) const {
-  return a + b;
+[[nodiscard]] constexpr inline
+    typename std::enable_if<std::is_integral_v<T>, T>::type
+    add(const T &first, const T &second) {
+  return first + second;
 }
 
 template <typename T>
-constexpr inline T Calculator<T>::subtract(const T &a, const T &b) const {
-  return a - b;
+[[nodiscard]] constexpr inline
+    typename std::enable_if<std::is_integral_v<T>, T>::type
+    subtract(const T &first, const T &second) {
+  return first - second;
 }
 
 template <typename T>
-constexpr inline T Calculator<T>::multiply(const T &a, const T &b) const {
-  return a * b;
+[[nodiscard]] constexpr inline
+    typename std::enable_if<std::is_integral_v<T>, T>::type
+    multiply(const T &first, const T &second) {
+  return first * second;
 }
 
 template <typename T>
-[[nodiscard]] constexpr inline Optional<T>
-Calculator<T>::divide(const T &a, const T &b) const {
-  if (b == 0) {
+[[nodiscard]] constexpr inline
+    typename std::enable_if<std::is_integral_v<T>, Optional<T>>::type
+    divide(const T &first, const T &second) {
+  if (second == 0) {
     return std::nullopt;
   }
-  return a / b;
+  return first / second;
 }
+} // namespace Calculator
