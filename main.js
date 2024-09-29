@@ -16,7 +16,7 @@ const handleDivide = (a, b) => {
 }
 
 console.log('Add: 3 + 2 =', calc.add(3, 2));
-console.log('Subtract: 5 - 3 =', calc.subtract(5, 3));
+console.log('Subtract: 5 - 3 =', calc.subtract(5, 1.23884));
 console.log('Multiply: 4 * 2 =', calc.multiply(4, 2));
 
 handleDivide(6, 2);

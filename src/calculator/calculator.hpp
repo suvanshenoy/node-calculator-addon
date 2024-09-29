@@ -1,35 +1,28 @@
 #pragma once
 
 #include "utils.hpp"
-#include <optional>
-#include <type_traits>
+#include <concepts>
 
 namespace Calculator {
-template <typename T>
-[[nodiscard]] constexpr inline
-    typename std::enable_if<std::is_integral_v<T>, T>::type
-    add(const T &first, const T &second) {
+
+template <Addable T>
+[[nodiscard]] constexpr inline T add(const T &first, const T &second) {
   return first + second;
 }
 
-template <typename T>
-[[nodiscard]] constexpr inline
-    typename std::enable_if<std::is_integral_v<T>, T>::type
-    subtract(const T &first, const T &second) {
+template <Subtractable T>
+[[nodiscard]] constexpr inline T subtract(const T &first, const T &second) {
   return first - second;
 }
 
-template <typename T>
-[[nodiscard]] constexpr inline
-    typename std::enable_if<std::is_integral_v<T>, T>::type
-    multiply(const T &first, const T &second) {
+template <MultiPlyable T>
+[[nodiscard]] constexpr inline T multiply(const T &first, const T &second) {
   return first * second;
 }
 
-template <typename T>
-[[nodiscard]] constexpr inline
-    typename std::enable_if<std::is_integral_v<T>, Optional<T>>::type
-    divide(const T &first, const T &second) {
+template <Dividable T>
+[[nodiscard]] constexpr inline Optional<T> divide(const T &first,
+                                                  const T &second) {
   if (second == 0) {
     return std::nullopt;
   }
