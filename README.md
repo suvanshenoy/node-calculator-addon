@@ -13,12 +13,14 @@ Using npm or bun
 - Install npm following instructions at https://github.com/npm/cli
 - build project using:
 ```
+   npm i
    npx node-gyp configure
    npm run build
 ```
 ###     or 
 - Install bun following instructions  at https://bun.sh
 ```
+   bun i
    bunx node-gyp configure
    bun build
 ```
