@@ -9,7 +9,7 @@ Using yarn (Easiest):
 ```
 in the root directory ie; node_calculator_addon
 
-Using npm or bun
+Using npm or bun:
 - Install npm following instructions at https://github.com/npm/cli
 - build project using:
 ```
@@ -19,6 +19,7 @@ Using npm or bun
 ```
 ###     or 
 - Install bun following instructions  at https://bun.sh
+- build project using:
 ```
    bun i
    bunx node-gyp configure
