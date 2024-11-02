@@ -15,7 +15,7 @@ concept Subtractable = requires(const T &first, const T &second) {
 
 template <typename T>
 concept MultiPlyable = requires(const T &first, const T &second) {
-  { first *second } -> std::same_as<T>;
+  { first * second } -> std::same_as<T>;
 };
 
 template <typename T>
