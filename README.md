@@ -31,7 +31,7 @@
    bun build
 ```
 
-**Running :
+**Running :**
 - To run the project use
 ```bash
   node main.js
