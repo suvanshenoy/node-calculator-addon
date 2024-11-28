@@ -9,7 +9,7 @@
 ```
 
 **Using npm or bun :**
-- Install npm by following instructions at
+- Install npm by following instructions at :
 
    https://github.com/npm/cli
 
