@@ -19,7 +19,7 @@
    npx node-gyp configure
    npm run build
 ```
-               or 
+####            or
 - Install bun following instructions  at :
 ```
    https://bun.sh
