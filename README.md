@@ -10,9 +10,9 @@
 
 **Using npm or bun :**
 - Install npm by following instructions at
-```
+
    https://github.com/npm/cli
-```
+
 - build project using:
 ```bash
    npm i
@@ -21,9 +21,9 @@
 ```
 ####            or
 - Install bun following instructions  at :
-```
+
    https://bun.sh
-```
+
 - build project using:
 ```bash
    bun i
