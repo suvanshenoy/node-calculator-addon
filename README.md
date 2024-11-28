@@ -1,6 +1,6 @@
 ## Nodejs Calculator Addon
 
-#### Installation and Building:
+### Installation and Building:
 **Using yarn (Easiest) :**
 - Install a package manager like yarn following instructions at https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable
 - To get the dependencies and build the project use 
