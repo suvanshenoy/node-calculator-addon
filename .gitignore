@@ -1,9 +1,9 @@
-.cache
+/.cache
 /build
-yarn.lock
-package-lock.json
-compile_commands.json
-node_modules/.yarn-integrity
+/yarn.lock
+/package-lock.json
+/compile_commands.json
+/node_modules
 /bun.lockb
 /compile_commands.json
 
